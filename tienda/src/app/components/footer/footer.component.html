@@ -1,0 +1,103 @@
+<!-- Footer -->
+<footer class="cs-footer pt-sm-5 pt-4 bg-dark">
+    <div class="container pt-3">
+      <div class="row pb-sm-2">
+        
+        <div class="col-6 col-sm-3 col-lg-2 mb-4">
+          <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Menu</h3>
+          <ul class="nav nav-light flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Tienda</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Contacto</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Ayuda</a>
+            </li>            
+          </ul>
+        </div>              
+        <div class="col-6 col-sm-3 col-lg-2 col-xl-3 mb-4">
+          <h3 class="h6 mb-2 pb-1 text-uppercase text-light pl-xl-2">Tienda</h3>
+          <ul class="nav nav-light flex-column pl-xl-2">
+            <li class="nav-item mb-2">
+              <a [routerLink]="['/productos']" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Café estándar</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a [routerLink]="['/productos']" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Café especial</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a [routerLink]="['/productos']" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Café tradicional</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a [routerLink]="['/productos']" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Café premium</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 pb-2 pb-lg-0 mb-4 col-xl-4">
+          <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Contacto</h3>
+          <ul class="nav nav-light flex-column pb-3">
+            <li class="nav-item text-nowrap mb-2">
+              <span class="text-light mr-1">Telefono:</span>
+              <a href="tel:3127635772" class="nav-link d-inline-block mr-lg-0 mr-sm-4 p-0 font-weight-normal">+57 312 763 5772</a>
+            </li>
+            <li class="nav-item text-nowrap mb-2">
+              <span class="text-light mr-1">Email:</span>
+              <a href="mailto:asoprocafenpa2014@gmail.com" class="nav-link d-inline-block mr-lg-0 mr-sm-4 p-0 font-weight-normal">asoprocafenpa2014@gmail.com</a>
+            </li>
+          </ul>
+          <a href="#" class="social-btn sb-solid sb-light mr-2">
+            <i class="cxi-facebook"></i>
+          </a>
+          <a href="#" class="social-btn sb-solid sb-light mr-2">
+            <i class="cxi-instagram"></i>
+          </a>
+          <a href="#" class="social-btn sb-solid sb-light mr-2">
+            <i class="cxi-twitter"></i>
+          </a>
+          
+        </div>
+        <div class="col-lg-4 col-xl-3 mb-4">
+          <h3 class="h6 mb-3 pb-1 text-uppercase text-light">Mi perfil</h3>
+          <ng-container *ngIf="user_lc == undefined">
+            <ul class="nav nav-light flex-column pb-3">
+              <li class="nav-item text-nowrap mb-2">
+                <span class="text-light mr-1"><i class="cxi-profile me-2"></i></span>
+                <a [routerLink]="['/login']" class="nav-link d-inline-block mr-lg-0 mr-sm-4 p-0 font-weight-normal">Iniciar sesión</a>
+              </li>
+            </ul>                        
+          </ng-container>
+          <ng-container *ngIf="user_lc">
+            <ul class="nav nav-light flex-column pb-3">
+              <li class="nav-item text-nowrap mb-2">
+                <span class="text-light mr-1"><i class="cxi-profile me-2"></i></span>
+                <a class="nav-link d-inline-block mr-lg-0 mr-sm-4 p-0 font-weight-normal">{{user_lc.nombres}} {{user_lc.apellidos}}</a>
+              </li>
+              <li class="nav-item text-nowrap mb-2">
+                <span class="text-light mr-1"><i class="cxi-settings me-2"></i></span>
+                <a [routerLink]="['/cuenta/perfil']" routerLinkActive="active" class="nav-link d-inline-block mr-lg-0 mr-sm-4 p-0 font-weight-normal">Configuracion perfil</a>
+              </li>
+              <li class="nav-item text-nowrap mb-2">
+                <span class="text-light mr-1"><i class="cxi-logout me-2"></i></span>
+                <a (click)="logout()" routerLinkActive="active" class="nav-link d-inline-block mr-lg-0 mr-sm-4 p-0 font-weight-normal">Cerrar sesion</a>
+              </li>
+            </ul>
+          </ng-container>
+        </div>
+        
+      </div>
+    </div>
+    <div class="border-top border-light">
+      <div class="container py-4">
+        <div class="font-size-xs text-light">
+          <span class="font-size-sm">&copy; </span>
+          All rights reserved. Made with 
+          <i class="cxi-heart mt-n1 mx-1 font-size-base text-primary align-middle"></i>
+          <a href="https://www.instagram.com/nova.solutions_col/?igshid=YmMyMTA2M2Y%3D" class="text-light" target="_blank" rel="noopener noreferrer">by Nova Solutions Col.</a>
+        </div>
+      </div>
+    </div>
+  </footer>

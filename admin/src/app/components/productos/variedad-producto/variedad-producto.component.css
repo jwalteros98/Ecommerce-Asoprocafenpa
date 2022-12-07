@@ -1,0 +1,8 @@
+@media (max-width: 575.98px) {
+    .sect-info .info-img{
+        padding-left: 0;
+    }
+    .sect-info .info-info{
+        padding-right: 0;
+    }
+}

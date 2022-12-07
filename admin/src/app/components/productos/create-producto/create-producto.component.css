@@ -1,0 +1,23 @@
+
+
+/******************MEDIA QUERI GENERIC PC ************************************/
+@media only all and (max-width: 1400px){
+
+}
+
+/******************MEDIA QUERI GENERIC PC ************************************/
+@media only all and (max-width: 1280px){
+
+}
+
+/******************MEDIA QUERI TABLET ************************************/
+@media only all and (max-width: 768px){
+
+}
+
+/******************MEDIA QUERI MOVIL ************************************/
+@media only all and (max-width: 391px){
+    .btn-create-producto {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,42 @@
+
+@media (min-width: 992px) and (max-width: 1400.98px) {
+    .img-slideshow-js{
+        background-position: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .img-slideshow-js{
+        background-position: center center;
+    }
+    .carousel-js{
+        margin-left: 0rem !important;
+    }
+    .img-instagram-js {
+        width: 490% !important;
+        margin-left: 3rem;
+    }
+    .pres-js {
+        flex: 0 100%;
+        max-width: 100%;
+    }
+    .hist-js{
+        padding-top: 20px;
+    }
+    .aboutus-js{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 575.98px){
+    .img-slideshow-js{
+        background-position: center;
+    }
+    .carousel-js{
+        margin-left: 0rem !important;
+    }
+    .pres-js img {
+        height: 460px !important;
+    }
+}

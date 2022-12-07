@@ -1,0 +1,384 @@
+<app-nav></app-nav>
+
+<main class="cs-page-wrapper">
+    <section class="cs-carousel cs-controls-onhover">
+        <div class="cs-carousel-inner" data-carousel-options=''>
+
+            <!-- Slide 0 -->
+          <!-- <div class="bg-size-cover py-xl-6" *ngIf="descuento_activo != undefined" style="background-image: url({{url}}obtener_banner_descuento/{{descuento_activo.banner}});">
+            <div class="container pt-5 pb-6">
+              <div class="row pb-lg-6">
+                <div class="col-lg-6 offset-lg-1 offset-xl-0 pb-4 pb-md-6">
+                  <h3 class="font-size-lg text-uppercase cs-from-left cs-delay-1">New In</h3>
+                  <h2 class="display-2 mb-lg-5 pb-3 cs-from-left">Menswear 2021</h2>
+                  <div class="mb-4 cs-scale-up cs-delay-2">
+                    <a href="shop-catalog.html" class="btn btn-outline-primary btn-lg">Shop the menswear</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+    
+          
+          <!-- Slide 1 -->
+          <div class="bg-size-cover py-xl-6 img-slideshow-js" *ngIf="descuento_activo != undefined" style="background-image: url(../../assets/img/ecommerce/slideshow/01.png);">
+            <div class="container pt-5 pb-6">
+              <div class="row pb-lg-6">
+                <div class="col-lg-6 offset-lg-1 offset-xl-0 pb-4 pb-md-6">
+                  <h3 class="font-size-lg text-uppercase cs-from-left cs-delay-1">Desde {{descuento_activo.fecha_inicio}} hasta {{descuento_activo.fecha_fin}}</h3>
+                  <h2 class="display-2 mb-lg-5 pb-3 cs-from-left">{{descuento_activo.titulo}}</h2>
+                  <div class="mb-4 cs-scale-up cs-delay-2">
+                    <a [routerLink]="['/productos']" class="btn btn-outline-primary btn-lg">Ver productos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Slide 2 -->
+          <div class="bg-size-cover py-xl-6 img-slideshow-js" style="background-image: url(../../assets/img/ecommerce/slideshow/04.png);">
+            <div class="container pt-5 pb-6">
+              <div class="row pb-lg-6">
+                <div class="col-lg-6 offset-lg-1 offset-xl-0 pb-4 pb-md-6">
+                  <h3 class="font-size-lg text-uppercase cs-from-top cs-delay-1">Asoprocafenpa</h3>
+                  <h2 class="display-2 mb-lg-5 pb-3 cs-scale-down">Llevamos tu consumo de café al siguiente nivel</h2>
+                  <div class="mb-4 cs-scale-down cs-delay-2">
+                    <a [routerLink]="['/productos']" class="btn btn-outline-primary btn-lg">Ver productos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Slide 3 -->
+          <div class="bg-size-cover py-xl-6 img-slideshow-js" style="background-image: url(../../assets/img/ecommerce/slideshow/03.png);">
+            <div class="container pt-5 pb-6">
+              <div class="row pb-lg-6">
+                <div class="col-lg-6 offset-lg-1 offset-xl-0 pb-4 pb-md-6">
+                  <h3 class="font-size-lg text-uppercase cs-from-left cs-delay-1">Asoprocafenpa</h3>
+                  <h2 class="display-2 mb-lg-5 pb-3 cs-from-left">Café 100% Colombiano a tu mesa</h2>
+                  <div class="mb-4 cs-scale-up cs-delay-2">
+                    <a [routerLink]="['/productos']" class="btn btn-outline-primary btn-lg">Ver productos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Slide 4 -->
+          <div class="bg-size-cover py-xl-6 img-slideshow-js" style="background-image: url(../../assets/img/ecommerce/slideshow/02.png);">
+            <div class="container pt-5 pb-6">
+              <div class="row pb-lg-6">
+                <div class="col-lg-6 offset-lg-1 offset-xl-0 pb-4 pb-md-6">
+                  <h3 class="font-size-lg text-uppercase cs-from-top cs-delay-1">Asoprocafenpa</h3>
+                  <h2 class="display-2 mb-lg-5 pb-3 cs-scale-down">Disfruta de nuestros productos</h2>
+                  <div class="mb-4 cs-scale-down cs-delay-2">
+                    <a [routerLink]="['/productos']" class="btn btn-outline-primary btn-lg">Ver productos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Pager -->
+        <div class="container position-relative">
+          <div class="row mt-lg-n5">
+            <div class="col-lg-7 col-md-8 col-sm-10 offset-lg-1 offset-xl-0">
+              <div class="position-relative">
+                <div id="pager" class="cs-pager cs-pager-inverse mb-xl-5 pb-5 pb-md-6">
+                  <button type="button" data-nav="0">01</button>
+                  <button type="button" data-nav="1">02</button>
+                  <button type="button" data-nav="2">03</button>
+                  <button type="button" data-nav="3">04</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="container pt-5 pt-lg-0">
+        <div class="cs-carousel cs-nav-outside">
+          <div class="cs-carousel-inner cs-carousel-inner-two" data-carousel-options=''>
+            <!-- Category -->
+            <a class="d-block cs-image-scale cs-heading-highlight text-center">
+              <div class="cs-image-inner mb-3 rounded">
+                <img src="assets/img/ecommerce/productos-asp-img/05.jpg" alt="Women’s">
+              </div>
+              <h3 class="h5 mb-1">Aroma</h3>
+            </a>
+            <!-- Category -->
+            <a class="d-block cs-image-scale cs-heading-highlight text-center">
+              <div class="cs-image-inner mb-3 rounded">
+                <img src="assets/img/ecommerce/productos-asp-img/06.jpg" alt="Men’s">
+              </div>
+              <h3 class="h5 mb-1">Color</h3>
+            </a>
+            <!-- Category -->
+            <a class="d-block cs-image-scale cs-heading-highlight text-center">
+              <div class="cs-image-inner mb-3 rounded">
+                <img src="assets/img/ecommerce/productos-asp-img/03.jpg" alt="Kids'">
+              </div>
+              <h3 class="h5 mb-1">Sabor</h3>
+            </a>
+          </div>
+        </div>
+    </section>
+
+    <!-- About us -->
+    <section class="pt-lg-5 pt-4 pb-lg-5 pb-5 bg-repeat-0 bg-position-center bg-size-contain aboutus-js" style="background-color: #f5f5f5;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 me-auto mb-md-0 mb-4 pb-md-0 pb-3 pres-js">
+            <img src="../assets/img/ecommerce/pick-asp/president-Asp.jpeg" alt="About" class="rounded" style="height: 550px;">
+          </div>
+          <div class="col-lg-7 col-md-7 pres-js hist-js">
+            <h3 class="h6 mb-2 text-uppercase">Bienvenidos a </h3>
+            <h2 class="h1 mb-4 pb-lg-3">ASOPROCAFENPA</h2>
+            <ul class="list-unstyled mb-0">
+              <li class="d-flex mb-2 pb-1">
+                <i class="ci-check mt-1 me-3 text-primary"></i>
+                Entre el 2015 y el 2017, gracias al aporte económico de Equión y aunando esfuerzos con la Agencia Canadiense de Desarrollo Internacional – ACDI, familias cafeteras del municipio de Nunchía en el departamento del Casanare fortalecieron sus condiciones socio-productivas y aumentaron sus ingresos a través del fortalecimiento de habilidades para la implementación de huertas familiares, la siembra de cultivos para la generación de excedentes y el manejo de Buenas Prácticas Agrícolas (BPA). Por su parte, los jóvenes desarrollaron habilidades empresariales y emprendedoras, mediante la creación de proyectos productivos pedagógicos articulados con los sectores económicos rurales del municipio. Y finalmente, la Asociación de Productores de café de Nunchía y Paya – ASOPROCAFENPA se formalizó y fortaleció organizacionalmente. 
+              </li>
+              <li class="d-flex mb-2 pb-1">
+                <i class="ci-check mt-1 me-3 text-primary"></i>
+                Café Baquiano, Caminos con historia, es la nueva marca de café, producto del trabajo, esfuerzo y sueños de 129 familias caficultoras y la Asociación de Productores de Café de Nunchía y Paya (Asoprocafenpa), apoyadas por la Embajada de Canadá, la Organización Internacional para las Migraciones (OIM) y Equión Energía.
+              </li>              
+            </ul>
+            <a [routerLink]="['/productos']" class="btn btn-gradient btn-hover-shadow mt-lg-4 mt-3">Ver productos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- New arrivals -->
+    <section class="container-fluid px-xl-grid-gutter mt-5 mb-3 mb-sm-4 mt-md-0 mb-lg-5 py-5 py-lg-6">
+        <div class="text-center mb-5 pb-2">
+          <h2 class="h1">Nuevos productos</h2>
+          <p class="font-size-lg text-muted mb-1">Echa un vistazo a nuestras últimas novedades para la próxima temporada</p>
+          <a [routerLink]="['/productos']" class="font-size-lg">Ver la colección aquí</a>
+        </div>
+
+        <!-- Product carousel -->
+        <div class="cs-carousel cs-nav-outside">
+          <div class="cs-carousel-inner cs-carousel-inner-three" data-carousel-options='{
+            
+          }'>
+
+            <!-- Item -->
+            <div *ngFor="let item of new_productos">
+              <div class="card card-product">
+                <div class="card-product-img">
+                  <a [routerLink]="['/productos/', item.slug]" class="card-img-top">
+                    <img [src]="url+'obtener_portada/'+item.portada" alt="Product image">
+                  </a>
+                  <div class="card-product-widgets-top">
+                    <div class="star-rating">
+                      <i class="sr-star cxi-star-filled active"></i>
+                      <i class="sr-star cxi-star-filled active"></i>
+                      <i class="sr-star cxi-star-filled active"></i>
+                      <i class="sr-star cxi-star-filled active"></i>
+                      <i class="sr-star cxi-star-filled active"></i>
+                    </div>
+                  </div>
+                  <div class="card-product-widgets-bottom">
+                    <a href="#" class="btn-wishlist ml-auto" data-toggle="tooltip" data-placement="left" title="Add to wishlist"></a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-product-title text-truncate mb-2">
+                    <a [routerLink]="['/productos/', item.slug]" class="nav-link">{{item.titulo}}</a>
+                  </h3>
+                  <div class="d-flex align-items-center" *ngIf="descuento_activo == undefined">
+                    <span class="h5 d-inline-block mb-0">{{item.precio}}</span>
+                  </div>
+                  <div class="d-flex align-items-center" *ngIf="descuento_activo != undefined">
+                    <span class="h5 d-inline-block text-danger mb-0">${{item.precio | descuento: descuento_activo.descuento}}</span>
+                    <del class="d-inline-block ml-2 ps-1 text-muted">{{item.precio}}</del>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+    </section>
+
+     <!-- Trending products (carousel) -->
+    <section class="py-5" style="background-color: #f5f5f5;">
+        <div class="container my-lg-2 py-2 py-md-4">
+          <div class="d-flex align-items-center justify-content-between pb-sm-1 mb-5">
+            <h2 class="h1 mb-0">Productos mas vendidos</h2>
+            <div class="tns-custom-controls cs-controls-inverse" id="custom-controls-trending" tabindex="0">
+              <button type="button" data-controls="prev" tabindex="-1">
+                <i class="cxi-arrow-left"></i>
+              </button>
+              <button type="button" data-controls="next" tabindex="-1">
+                <i class="cxi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="cs-carousel pb-2">
+            <div class="cs-carousel-inner cs-carousel-inner-four" data-carousel-options='{
+              
+            }'>
+
+              <!-- Item -->
+              <div *ngFor="let item of mas_vendidos">
+                <div class="card card-product mx-auto">
+                  <div class="card-product-img">
+                    <a [routerLink]="['/productos/', item.slug]" class="card-img-top">
+                      <img [src]="url+'obtener_portada/'+item.portada" alt="Product image">
+                    </a>
+                    <div class="card-product-widgets-top">
+                      <div class="star-rating ml-auto">
+                        <i class="sr-star cxi-star-filled active"></i>
+                        <i class="sr-star cxi-star-filled active"></i>
+                        <i class="sr-star cxi-star-filled active"></i>
+                        <i class="sr-star cxi-star-filled active"></i>
+                        <i class="sr-star cxi-star-filled active"></i>
+                      </div>
+                    </div>
+                    <div class="card-product-widgets-bottom">
+                      <a href="#" class="btn-wishlist ml-auto" data-toggle="tooltip" data-placement="left" title="Add to wishlist"></a>
+                    </div>
+                  </div>
+                  <div class="card-body bg-0 pb-2">
+                    <h3 class="card-product-title text-truncate mb-2">
+                      <a [routerLink]="['/productos/', item.slug]" class="nav-link">{{item.titulo}}</a>
+                    </h3>
+                    <div class="d-flex align-items-center" *ngIf="descuento_activo == undefined">
+                        <span class="h5 d-inline-block mb-0">{{item.precio}}</span>
+                      </div>
+                      <div class="d-flex align-items-center" *ngIf="descuento_activo != undefined">
+                        <span class="h5 d-inline-block text-danger mb-0">${{item.precio | descuento: descuento_activo.descuento}}</span>
+                        <del class="d-inline-block ml-2 ps-1 text-muted">{{item.precio}}</del>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="text-center pt-4 pt-md-5">
+            <a [routerLink]="['/productos']" class="btn btn-outline-primary btn-lg">Explorar mas productos</a>
+          </div>
+        </div>
+    </section>
+
+    <!-- Popular categories -->
+    <section class="container mt-1 mb-3 my-sm-4 py-5 py-lg-6">
+        <h2 class="h1 mb-5 pb-3 text-center">Categorias</h2>
+        <div class="cs-carousel cs-nav-outside">
+          <div style="margin-left: 12rem;" class="cs-carousel-inner cs-carousel-inner-five carousel-js" data-carousel-options='{
+            
+          }'>
+
+            <!-- Category -->
+            <div class="pb-2" *ngFor="let item of categorias">
+              <a [routerLink]="['/productos/categoria/', item.titulo.toLowerCase()]" class="d-block cs-image-scale cs-heading-highlight text-center">
+                <div class="cs-image-inner rounded-circle mx-auto mb-4" style="max-width: 180px;">
+                  <img [src]="item.portada" alt="Category image">
+                </div>
+                <h3 class="h5 mb-3">{{item.titulo}}</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Mobile app CTA -->
+    <section class="bg-dark">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-5">
+              <img src="../../assets/img/ecommerce/home/mobile-app-illustration.png" class="d-block mx-auto my-4 mb-lg-0 mt-lg-n4" width="498" alt="Illustartion">
+            </div>
+            <div class="col-md-7 col-lg-6 pt-3 pb-5 pt-md-5 pb-md-4 ml-auto">
+              <h2 class="text-light text-center text-md-left pb-3">Estamos felices de que tu estes aqui, disfrute de las mejores ofertas!</h2>
+              <div class="d-flex flex-wrap flex-sm-nowrap justify-content-center justify-content-md-start">
+                <a href="#" class="btn-market btn-apple mb-3 mx-2 ml-md-0 mr-md-3" role="button">
+                  <span class="btn-market-subtitle">Download on the</span>
+                  <span class="btn-market-title">App Store</span>
+                </a>
+                <a href="#" class="btn-market btn-google mb-3 mx-2 mx-md-0" role="button">
+                  <span class="btn-market-subtitle">Download on the</span>
+                  <span class="btn-market-title">Google Play</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="container pt-5 pb-2 pb-sm-5 py-md-5 py-lg-6">
+        <div class="row py-3">
+          <div class="col-sm-6 col-md-3 text-center mb-md-0 mb-4 pb-md-0 pb-3">
+            <img class="mb-4" src="../../assets/img/ecommerce/home/services/delivery.svg" width="48" alt="Worldwide Shipping">
+            <h5 class="h5 mb-2">Envíos muy rápido</h5>
+            <p class="mb-0 text-muted">Obtén envío gratis a partir de $250.000</p>
+          </div>
+          <span class="divider-vertical d-sm-block d-none"></span>
+          <div class="col-sm-6 col-md-3 text-center mb-md-0 mb-4 pb-md-0 pb-3">
+            <img class="mb-4" src="../../assets/img/ecommerce/home/services/support.svg" width="48" alt="Customer Support">
+            <h5 class="h5 mb-2">24/7 Atención al cliente</h5>
+            <p class="mb-0 text-muted">Atención al cliente amigable 24/7</p>
+          </div>
+          <span class="divider-vertical d-sm-block d-none"></span>
+          <div class="col-sm-6 col-md-3 text-center mb-md-0 mb-4 pb-md-0 pb-3">
+            <img class="mb-4" src="../../assets/img/ecommerce/home/services/guarantee.svg" width="48" alt="Customer Support">
+            <h5 class="h5 mb-2">Garantía de reembolso</h5>
+            <p class="mb-0 text-muted">Devolvemos el dinero en 30 días</p>
+          </div>
+          <span class="divider-vertical d-sm-block d-none"></span>
+          <div class="col-sm-6 col-md-3 text-center mb-md-0 mb-4 pb-md-0 pb-3">
+            <img class="mb-4" src="../../assets/img/ecommerce/home/services/payment.svg" width="48" alt="Customer Support">
+            <h5 class="h5 mb-2">Secure Online Payment</h5>
+            <p class="mb-0 text-muted">Aceptamos tarjetas de crédito</p>
+          </div>
+        </div>
+    </section>
+
+
+    <!-- Insagram -->
+    <section class="pt-5 pb-4 pt-lg-6 pb-lg-5 border-top border-bottom">
+        <div class="container pt-md-4 pb-2 pt-lg-0 pb-lg-0">
+          <div class="row">
+            <div class="col-md-4 text-center text-md-left pb-2 pb-md-0 mb-4 mb-md-0">
+              <p class="text-dark text-uppercase mb-2">Siganos en instagram</p>
+              <h2 class="h1 pb-2 pb-md-3">@asoprocafenpa</h2>
+              <a href="#" class="btn btn-outline-primary btn-lg">
+                <i class="cxi-instagram font-size-lg mr-1"></i>
+                Seguir en instagram
+              </a>
+            </div>
+            <div class="col-md-8">
+              <div class="cs-carousel cs-nav-outside">
+                <div class="cs-carousel-inner cs-carousel-inner-six img-instagram-js" data-carousel-options='{
+                  
+                }'>
+                  <!-- Image -->
+                  <div>
+                    <img src="assets/img/ecommerce/productos-asp-img/01.jpg" alt="Image">
+                  </div>
+                  <!-- Image -->
+                  <div>
+                    <img src="assets/img/ecommerce/productos-asp-img/02.jpg" alt="Image">
+                  </div>
+                  <!-- Image -->
+                  <div>
+                    <img src="assets/img/ecommerce/productos-asp-img/03.jpg" alt="Image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</main>
+
+
+<app-footer></app-footer>
