@@ -1,0 +1,24 @@
+version: "3.7"
+services:
+  database:
+    image: mongo:5.0.8-focal
+    environment:
+      MONGO_INITDB_DATABASE: Asoprocafenpa
+    ports:
+      - 27017:27017
+    volumes:
+      - ./docker/mongo-data:/data/db
+  backend:
+    image: darkmarus/openix:ecobackend
+    environment:
+      MONGO_DB: mongodb://database/Asoprocafenpa
+    ports:
+      - 4201:4201
+  admin:
+    image: darkmarus/openix:ecoadmin
+    ports:
+      - 8081:80
+  tienda:
+    image: darkmarus/openix:ecotienda
+    ports:
+      - 8080:80

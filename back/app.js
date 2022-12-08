@@ -34,7 +34,7 @@ var carrito_route = require("./routes/carrito");
 var venta_route = require("./routes/venta");
 var descuento_route = require("./routes/descuento");
 
-mongoose.connect("mongodb://127.0.0.1:27017/Asoprocafenpa",(err, res) => {
+mongoose.connect(process.env.MONGO_DB,(err, res) => {
   if (err) {
     console.log(err);
   } else {

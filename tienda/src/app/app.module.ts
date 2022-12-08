@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from "@angular/forms";
 import { HttpClient, HttpClientModule } from "@angular/common/http";
-import { NgbPaginationModule } from "@ng-bootstrap/ng-bootstrap";
+import { NgbPaginationModule, NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 import { routing } from "./app.routing";
 

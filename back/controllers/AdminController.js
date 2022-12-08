@@ -1,6 +1,6 @@
 'use strict'
 
-var Admin = require('../models/Admin');
+var Admin = require('../models/admin');
 var Venta = require('../models/venta');
 var Dventa = require('../models/dventa');
 var Contacto = require('../models/contacto');
