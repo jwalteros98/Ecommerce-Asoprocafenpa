@@ -16,6 +16,8 @@ services:
       - 4201:4201
   admin:
     image: darkmarus/openix:ecoadmin
+    volumes:
+      - ./docker/backend/uploads:/app/uploads
     ports:
       - 8081:80
   tienda:

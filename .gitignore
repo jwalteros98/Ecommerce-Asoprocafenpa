@@ -1,3 +1,5 @@
-docker\mongo-data
-docker\nginx-proxy-manager\data
-docker\nginx-proxy-manager\letsencrypt
+docker/mongo-data
+docker/nginx-proxy-manager/data
+docker/nginx-proxy-manager/letsencrypt
+docker/backend/uploads
+docker/mongo-data
