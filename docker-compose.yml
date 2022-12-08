@@ -12,12 +12,12 @@ services:
     image: darkmarus/openix:ecobackend
     environment:
       MONGO_DB: mongodb://database/Asoprocafenpa
+    volumes:
+      - ./docker/backend/uploads:/app/uploads
     ports:
       - 4201:4201
   admin:
     image: darkmarus/openix:ecoadmin
-    volumes:
-      - ./docker/backend/uploads:/app/uploads
     ports:
       - 8081:80
   tienda:
