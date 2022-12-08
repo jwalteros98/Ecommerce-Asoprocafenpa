@@ -22,3 +22,14 @@ services:
     image: darkmarus/openix:ecotienda
     ports:
       - 8080:80
+  proxy:
+    image: jc21/nginx-proxy-manager:latest
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+    environment:
+      DB_SQLITE_FILE: "/data/npm.sqlite"
+    volumes:
+      - ./docker/nginx-proxy-manager/data:/data
+      - ./docker/nginx-proxy-manager/letsencrypt:/etc/letsencrypt

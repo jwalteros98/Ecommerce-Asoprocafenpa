@@ -1,7 +1,7 @@
 FROM nginx:1.22.0-alpine
 
-COPY admin/dist/admin /usr/share/nginx/html
+COPY tienda/dist/tienda /usr/share/nginx/html
 
-COPY admin/docker/nginx.conf  /etc/nginx/nginx.conf
+COPY tienda/docker/nginx.conf  /etc/nginx/nginx.conf
 
 EXPOSE 80

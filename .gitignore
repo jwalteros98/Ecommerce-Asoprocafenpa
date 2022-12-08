@@ -1,1 +1,3 @@
 docker\mongo-data
+docker\nginx-proxy-manager\data
+docker\nginx-proxy-manager\letsencrypt
